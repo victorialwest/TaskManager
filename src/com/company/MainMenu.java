@@ -20,7 +20,7 @@ public class MainMenu {
 
         try {
             switch (selection) {
-
+                //pull input into this line
                 case 1:
                     //create task
                 case 2:

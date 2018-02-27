@@ -20,6 +20,8 @@ public class TaskLists {
 
     public void setTitle(String title) {
         this.title = title;
+        System.out.println("What is the title of your task?");
+        title = input.nextLine();
     }
 
     public int getDueDate() {
@@ -28,6 +30,8 @@ public class TaskLists {
 
     public void setDueDate(int dueDate) {
         this.dueDate = dueDate;
+        System.out.println("What is the due date of your task?");
+        dueDate = input.nextLine();
     }
 
     public String getDetails() {
@@ -36,6 +40,8 @@ public class TaskLists {
 
     public void setDetails(String details) {
         this.details = details;
+        System.out.println("What are the details of your task?");
+        details = input.nextLine();
     }
 
     public int getDateComplete() {
@@ -44,5 +50,7 @@ public class TaskLists {
 
     public void setDateComplete(int dateComplete) {
         this.dateComplete = dateComplete;
+        System.out.println("Your task has been completed and the date has been logged.");
+        dateComplete = input.nextlin();
     }
 }
