@@ -2,19 +2,19 @@ package com.company;
 
 public class TaskLists extends MainMenu{
 
-    public String title;
-    public int dueDate;
+    public static String title;
+    public String dueDate;
     public String details;
-    public int dateComplete;
+    public String dateComplete;
 
-    public TaskLists(String title, int dueDate, String details, int dateComplete) {
+    public TaskLists() {
         this.title = title;
         this.dueDate = dueDate;
         this.details = details;
         this.dateComplete = dateComplete;
     }
 
-    public String getTitle() {
+    public static String getTitle() {
         return title;
     }
 
@@ -44,11 +44,11 @@ public class TaskLists extends MainMenu{
         details = input.nextLine();
     }
 
-    public int getDateComplete() {
+    public String getDateComplete() {
         return dateComplete;
     }
 
-    public void setDateComplete(int dateComplete) {
+    public void setDateComplete(String dateComplete) {
         this.dateComplete = dateComplete;
         System.out.println("Your task has been completed and the date has been logged.");
         dateComplete = input.nextLine();

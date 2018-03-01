@@ -27,23 +27,24 @@ public class MainMenu{
 
                 case 1:
                     //create task
-                    TaskLists tasklists = new TaskLists("", 2, "" , 7;
-
+                    TaskLists tasklists = new TaskLists();
+                    System.out.println("You have added " + TaskLists.getTitle() + " to your task list.");
+                    break;
                 case 2:
                     //edit task
-
+                    break;
                 case 3:
                     //complete task
-
+                    break;
                 case 4:
                     //view all tasks
-
+                    break;
                 case 5:
                     //view completed tasks
-
+                    break;
                 case 6:
                     //view incomplete tasks
-
+                    break;
                 case 7:
                     //exit
                     System.exit(0);
