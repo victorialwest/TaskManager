@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class MainMenu {
+public class MainMenu{
 
-    private Scanner input;
+    public Scanner input;
 
     protected void UserPrompt() {
 
@@ -24,18 +24,26 @@ public class MainMenu {
         try {
             switch (selection) {
                 //pull input into this line
+
                 case 1:
                     //create task
+                    TaskLists tasklists = new TaskLists("", 2, "" , 7;
+
                 case 2:
                     //edit task
+
                 case 3:
                     //complete task
+
                 case 4:
                     //view all tasks
+
                 case 5:
                     //view completed tasks
+
                 case 6:
                     //view incomplete tasks
+
                 case 7:
                     //exit
                     System.exit(0);
