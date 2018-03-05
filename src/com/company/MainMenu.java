@@ -1,6 +1,5 @@
 package com.company;
 
-import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -8,11 +7,11 @@ public class MainMenu{
 
     public Scanner input;
 
+    private PutTogether puttogether = new PutTogether();
     protected void UserPrompt() {
 
-        ArrayList<String> title = new ArrayList<String>();
 
-        System.out.println("This is your task manager. It acts like a to do list for the things you need to complete, " +
+        System.out.println("This is your task manager. It functions like a to do list for the things you need to complete, " +
                 "and you can track the due dates and dates completed.");
         System.out.println( "\n");
         System.out.println("What would you like to do with the Task Manager?" + "\n" );
@@ -20,15 +19,11 @@ public class MainMenu{
         System.out.println("6. View incomplete tasks \n7. Exit");
         input = new Scanner(System.in);
         int selection = input.nextInt();
-
         try {
             switch (selection) {
-                //pull input into this line
-
                 case 1:
                     //create task
-                    TaskLists tasklists = new TaskLists();
-                    System.out.println("You have added " + TaskLists.getTitle() + " to your task list.");
+                    puttogether.CreateTask();
                     break;
                 case 2:
                     //edit task

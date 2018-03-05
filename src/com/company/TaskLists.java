@@ -1,25 +1,27 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class TaskLists extends MainMenu{
 
-    public static String title;
+    public String title = "";
     public String dueDate;
     public String details;
     public String dateComplete;
+    private Scanner input = new Scanner(System.in);
 
     public TaskLists() {
-        this.title = title;
-        this.dueDate = dueDate;
-        this.details = details;
-        this.dateComplete = dateComplete;
+        setTitle();
+        setDueDate();
+        setDetails();
+        setDueDate();
     }
 
-    public static String getTitle() {
+    public  String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setTitle() {
         System.out.println("What is the title of your task?");
         title = input.nextLine();
     }
@@ -28,7 +30,7 @@ public class TaskLists extends MainMenu{
         return dueDate;
     }
 
-    public void setDueDate(String dueDate) {
+    public void setDueDate() {
         this.dueDate = dueDate;
         System.out.println("What is the due date of your task?");
         dueDate = input.nextLine();
@@ -38,7 +40,7 @@ public class TaskLists extends MainMenu{
         return details;
     }
 
-    public void setDetails(String details) {
+    public void setDetails() {
         this.details = details;
         System.out.println("What are the details of your task?");
         details = input.nextLine();
@@ -48,7 +50,7 @@ public class TaskLists extends MainMenu{
         return dateComplete;
     }
 
-    public void setDateComplete(String dateComplete) {
+    public void setDateComplete() {
         this.dateComplete = dateComplete;
         System.out.println("Your task has been completed and the date has been logged.");
         dateComplete = input.nextLine();
