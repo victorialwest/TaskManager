@@ -6,6 +6,7 @@ import java.util.ArrayList;
 public class PutTogether {
 
     private ArrayList<TaskLists> list = new ArrayList<>();
+    private ArrayList<TaskLists> completed = new ArrayList<>();
 
 
     protected void CreateTask(){
@@ -26,6 +27,11 @@ public class PutTogether {
 
     }
     protected void viewIncompleteTasks(){
+        int index = 1;
+        for (TaskLists tasklists : list) {
+            System.out.println();
+
+        }
 
     }
 }
