@@ -33,12 +33,15 @@ public class MainMenu{
                     break;
                 case 4:
                     //view all tasks
+                    puttogether.viewTasks();
                     break;
                 case 5:
                     //view completed tasks
+                    puttogether.viewCompletedTasks();
                     break;
                 case 6:
                     //view incomplete tasks
+                    puttogether.viewIncompleteTasks();
                     break;
                 case 7:
                     //exit
