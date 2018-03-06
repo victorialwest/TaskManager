@@ -26,7 +26,7 @@ public class PutTogether {
     protected void viewTasks() {
         System.out.println("Here are your complete tasks: ");
         viewCompletedTasks();
-        System.out.println("Here are your incompleted tasks: ");
+        System.out.println("Here are your incomplete tasks: ");
         viewIncompleteTasks();
 
     }
@@ -34,6 +34,7 @@ public class PutTogether {
     protected void viewCompletedTasks() {
         int index2 = 1;
         for (TaskLists tasklists : completed) {
+            System.out.println("Here are your completed tasks: ");
             System.out.println(index2++ + " title: " + tasklists.title + "\n due date: " + tasklists.dueDate + " \n details: "
                     + tasklists.details);
 
@@ -43,6 +44,7 @@ public class PutTogether {
     protected void viewIncompleteTasks() {
         int index = 1;
         for (TaskLists tasklists : list) {
+            System.out.println("Here are your incomplete tasks: ");
             System.out.println(index++ + " title: " + tasklists.title + "\n due date: " + tasklists.dueDate + " \n details: "
                     + tasklists.details);
         }

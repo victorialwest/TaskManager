@@ -8,7 +8,7 @@ public class MainMenu{
     public Scanner input;
 
     private PutTogether puttogether = new PutTogether();
-    protected void UserPrompt() {
+    protected void userPrompt() {
 
 
         System.out.println("This is your task manager. It functions like a to do list for the things you need to complete, " +
@@ -24,6 +24,7 @@ public class MainMenu{
                 case 1:
                     //create task
                     puttogether.CreateTask();
+                    userPrompt();
                     break;
                 case 2:
                     //edit task
@@ -34,14 +35,17 @@ public class MainMenu{
                 case 4:
                     //view all tasks
                     puttogether.viewTasks();
+                    userPrompt();
                     break;
                 case 5:
                     //view completed tasks
                     puttogether.viewCompletedTasks();
+                    userPrompt();
                     break;
                 case 6:
                     //view incomplete tasks
                     puttogether.viewIncompleteTasks();
+                    userPrompt();
                     break;
                 case 7:
                     //exit
@@ -49,13 +53,13 @@ public class MainMenu{
                     break;
                 default:
                     System.out.println("Please enter a number between 1 and 7");
-                    UserPrompt();
+                    userPrompt();
             }
 
         } catch (InputMismatchException ime) {
             input.nextLine();
             System.out.println("Please enter a number between 1 and 7.");
-            UserPrompt();
+            userPrompt();
 
         }
     }

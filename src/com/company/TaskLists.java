@@ -14,7 +14,6 @@ public class TaskLists extends MainMenu{
         setTitle();
         setDueDate();
         setDetails();
-        setDueDate();
     }
 
     public  String getTitle() {
