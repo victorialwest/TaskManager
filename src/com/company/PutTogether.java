@@ -8,6 +8,7 @@ public class PutTogether {
     protected ArrayList<TaskLists> list = new ArrayList<>();
     protected final ArrayList<TaskLists> completed = new ArrayList<>();
     private Scanner scanner = new Scanner(System.in);
+    public Scanner input2;
 
     protected void CreateTask() {
 
@@ -16,6 +17,22 @@ public class PutTogether {
     }
 
     protected void editTask() {
+        System.out.println("Do you want to edit the 1. Title \n 2. Due Date \n 3. Details");
+        int selection2 = input2.nextInt();
+        switch (selection2){
+            case 1:
+                //edit title
+                break;
+            case 2:
+                //edit due date
+                break;
+            case 3:
+                //edit details
+                break;
+            default:System.out.println("Please enter a number between 1 and 7");
+               editTask();
+
+        }
 
     }
 

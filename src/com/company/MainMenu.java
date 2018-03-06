@@ -17,6 +17,7 @@ public class MainMenu{
         System.out.println("What would you like to do with the Task Manager?" + "\n" );
         System.out.println("1. Create task \n2. Edit task \n3. Complete Task \n4. View all tasks \n5. View completed tasks");
         System.out.println("6. View incomplete tasks \n7. Exit");
+        //add a delete task?
         input = new Scanner(System.in);
         int selection = input.nextInt();
         try {
@@ -28,9 +29,18 @@ public class MainMenu{
                     break;
                 case 2:
                     //edit task
+                    puttogether.editTask();
+                    System.out.println("What item do you want to edit? Enter the number of the item");
+
+                    //user input +1 to correct formatting
+                    //ask user what they wanted to change
+                    //code to change that item on the list to what the user inputted
+                    userPrompt();
                     break;
                 case 3:
                     //complete task
+                    //moves task entered into completedtasks
+
                     break;
                 case 4:
                     //view all tasks
