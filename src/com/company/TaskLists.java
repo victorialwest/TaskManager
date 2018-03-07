@@ -16,7 +16,7 @@ public class TaskLists extends MainMenu{
         setDetails();
     }
 
-    public  String getTitle() {
+    public String getTitle() {
         return title;
     }
 
