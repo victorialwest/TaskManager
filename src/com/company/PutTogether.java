@@ -28,18 +28,21 @@ public class PutTogether {
                 System.out.println("Enter a new title:");
                 String new_title = input2.nextLine();
                 System.out.println(new_title);
+                list.set(new_title);
                 // How do I set the title from this case?
                 break;
             case 2:
                 System.out.println("Enter a new due date:");
                 String new_date = input2.nextLine();
                 System.out.println(new_date);
+                list.set(new_date);
                 break;
             case 3:
                 //edit details
                 System.out.println("Enter new details:");
                 String new_details = input2.nextLine();
                 System.out.println(new_details);
+                list.set(new_details);
                 break;
             default:System.out.println("Please enter a number between 1 and 7");
                editTask();
